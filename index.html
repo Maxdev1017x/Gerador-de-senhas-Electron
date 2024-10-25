@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERADOR DE SENHAS</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <main>
+        <form>
+            <h1>GERADOR DE SENHAS</h1>
+            
+            <div>
+                <label for="pass">Qual o tamanho da senha que você quer?</label>
+                
+                <input type="number" id="pass" name="pass" min="0" max="300" aria-describedby="passHelp">
+                <small id="passHelp">Escolha um número entre 0 e 300</small>
+            </div>
+            
+            <div>
+                <button type="button" onclick="generatePass()">Gerar senha</button>
+            </div>
+        </form>
+        <div>
+            <p id="newPassword" aria-live="polite"></p>
+        </div>
+    </main>
+    <script src="./src/scripts/script.js"></script>
+</body>
+</html>
